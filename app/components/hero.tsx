@@ -17,6 +17,7 @@ import {
   LinkedinIcon,
 } from "lucide-react";
 import { hackerMedium } from "@/fonts/font";
+import Link from "next/link";
 
 // Updated features for portfolio focus
 const features = [
@@ -169,10 +170,13 @@ export const WhatIsSandbox = () => {
                 already transforming their college journey!
               </p>
               <div className="flex justify-center space-x-4">
-                <button className="bg-[#0056FE] text-white px-8 py-4 rounded-lg  hover:bg-blue-600 transition-colors inline-flex items-center space-x-2 shadow-lg hover:shadow-xl capitalize">
+                <Link
+                  href="/my-portfolio"
+                  className="bg-[#0056FE] text-white px-8 py-4 rounded-lg  hover:bg-blue-600 transition-colors inline-flex items-center space-x-2 shadow-lg hover:shadow-xl capitalize"
+                >
                   <span>create my portfolio</span>
                   <ArrowRight className="w-5 h-5" />
-                </button>
+                </Link>
               </div>
             </div>
           </div>

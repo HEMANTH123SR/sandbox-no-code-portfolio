@@ -118,9 +118,12 @@ export const Header = () => {
 
           {/* CTA Button - Right */}
           <div className="hidden  flex-shrink-0 md:flex justify-center items-center space-x-4">
-            <button className="bg-[#0056FE] text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+            <Link
+              href={"/my-portfolio"}
+              className="bg-[#0056FE] text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+            >
               Create Portfolio
-            </button>
+            </Link>
             <UserButton />
           </div>
 
